@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-surface-dim text-on-surface font-body antialiased overflow-x-hidden">
+
+  <!-- Atmospheric Scanline Overlay -->
+  <div class="scanline-home"></div>
+
+  <!-- Navigation -->
+  {{ partial "nav.html" . }}
+
+  <!-- Page Content -->
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <!-- Footer -->
+  {{ partial "footer.html" . }}
+
+  <!-- ── Unified JavaScript ─────────────────────────────────────────────── -->
+  <script src="{{ "js/main.js" | relURL }}"></script>
+
+</body>
+</html>

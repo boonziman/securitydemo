@@ -1,0 +1,66 @@
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SecureGuard — Unified Footer Partial
+     Consistent footer across all standard pages
+     ═══════════════════════════════════════════════════════════════════════ -->
+
+<footer class="w-full border-t border-primary/10 bg-surface-dim relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-5 pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-8 md:px-12 py-20">
+    <!-- ── Main Footer Grid ────────────────────────────────────────────── -->
+    <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
+
+      <!-- Brand Block -->
+      <div class="max-w-xs">
+        <a href="{{ "/" | relURL }}" class="text-2xl font-black text-primary font-headline tracking-[0.2em] mb-6 block hover:drop-shadow-[0_0_10px_rgba(0,229,255,0.4)] transition-all">SECUREGUARD</a>
+        <p class="text-on-surface-variant text-[10px] leading-relaxed uppercase tracking-widest font-bold opacity-60">
+          Defending global interests with obsidian-grade security architectures and tactical physical dominance.
+        </p>
+      </div>
+
+      <!-- Link Columns -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-12 md:gap-16">
+        <div class="space-y-4">
+          <div class="text-[10px] text-primary uppercase font-bold tracking-widest">Solutions</div>
+          <div class="flex flex-col gap-2 text-[9px] uppercase tracking-widest font-bold">
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "services/" | relURL }}">Active Tiers</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "technology/" | relURL }}">Intelligence Grid</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "services/" | relURL }}#arsenal">The Arsenal</a>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="text-[10px] text-primary uppercase font-bold tracking-widest">Company</div>
+          <div class="flex flex-col gap-2 text-[9px] uppercase tracking-widest font-bold">
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "/" | relURL }}">Command Center</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "/" | relURL }}#team">Elite Careers</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "quote/" | relURL }}">Contact Node</a>
+          </div>
+        </div>
+
+        <div class="space-y-4 col-span-2 md:col-span-1">
+          <div class="text-[10px] text-primary uppercase font-bold tracking-widest">Legal</div>
+          <div class="flex flex-col gap-2 text-[9px] uppercase tracking-widest font-bold">
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="#">Privacy Protocol</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="#">Engagement Terms</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="#">Encryption Std</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Bottom Bar ──────────────────────────────────────────────────── -->
+    <div class="pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-on-surface-variant/40 font-mono text-[8px] uppercase tracking-widest">
+        © {{ .Site.Params.year }} SECUREGUARD TACTICAL SYSTEMS. ALL RIGHTS RESERVED.
+      </div>
+      <div class="flex gap-8 items-center">
+        <div class="flex gap-4 items-center">
+          <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_green]"></div>
+          <span class="text-[8px] font-mono text-on-surface-variant/60 uppercase">System Status: NOMINAL</span>
+        </div>
+        <span class="text-[8px] font-mono text-on-surface-variant/40 uppercase tracking-[0.3em]">SECURE_LINK: TLS_1.3</span>
+      </div>
+    </div>
+  </div>
+</footer>

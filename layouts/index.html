@@ -1,0 +1,363 @@
+{{ define "main" }}
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     HOME PAGE — SENTRY_CORE TACTICAL
+     Hero · Defense Verticals · Operations Map · Team · Testimonials · CTA
+     ═══════════════════════════════════════════════════════════════════════ -->
+
+<!-- ── Hero Section ─────────────────────────────────────────────────────── -->
+<section class="relative min-h-screen flex items-center px-8 lg:px-24 grid-bg" id="systems">
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface-dim/50 to-surface-dim pointer-events-none"></div>
+
+  <div class="grid lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto z-10 pt-16">
+    <!-- Left: Copy -->
+    <div class="relative">
+      <div class="inline-flex items-center gap-3 mb-8 px-4 py-1.5 obsidian-panel rounded-full border border-primary/20">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+        <span class="text-[9px] font-label uppercase tracking-[0.3em] text-primary font-bold">Orbital Link: ESTABLISHED</span>
+      </div>
+
+      <h1 class="text-7xl lg:text-[100px] font-headline font-black leading-[0.9] tracking-tighter mb-8 uppercase italic">
+        <span class="text-white opacity-20 block text-4xl mb-4 not-italic tracking-widest">TACTICAL_SHIELD</span>
+        Protecting<br/><span class="text-primary drop-shadow-[0_0_15px_rgba(0,229,255,0.4)]">The Core</span>
+      </h1>
+
+      <p class="text-on-surface-variant max-w-lg mb-12 text-lg leading-relaxed font-light border-l-2 border-primary/20 pl-6">
+        Next-generation obsidian-grade surveillance and tactical physical security unified into a single command architecture. Global defense, local dominance.
+      </p>
+
+      <div class="flex flex-wrap gap-6">
+        <a href="{{ "quote/" | relURL }}" class="px-10 py-5 bg-primary text-on-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs glow-hover flex items-center gap-3 transition-all">
+          Initialize Deployment
+          <span class="material-symbols-outlined text-sm">bolt</span>
+        </a>
+        <a href="#ops" class="px-10 py-5 border border-outline-variant text-white font-headline uppercase tracking-[0.2em] text-xs hover:bg-white/5 transition-all">
+          View Threat Map
+        </a>
+      </div>
+
+      <div class="mt-16 flex gap-12 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/60">
+        <div><span class="text-primary">LAT:</span> 51.5074° N</div>
+        <div><span class="text-primary">LNG:</span> 0.1278° W</div>
+        <div><span class="text-primary">SEC:</span> LEVEL_7</div>
+      </div>
+    </div>
+
+    <!-- Right: Shield Graphic -->
+    <div class="relative aspect-square flex items-center justify-center">
+      <div class="relative w-80 h-80 lg:w-[500px] lg:h-[500px] flex items-center justify-center floating">
+        <div class="absolute inset-0 border-[1px] border-primary/10 rounded-full animate-[spin_40s_linear_infinite] border-dashed"></div>
+        <div class="absolute inset-8 border-[2px] border-primary/20 rounded-[40%] animate-[spin_25s_linear_infinite_reverse]"></div>
+        <div class="absolute inset-16 border-[1px] border-primary/40 rounded-full animate-[spin_15s_linear_infinite] flex items-start justify-center">
+          <div class="w-1 h-1 bg-primary rounded-full -mt-0.5 glow-primary shadow-[0_0_10px_#00E5FF]"></div>
+        </div>
+        <div class="relative w-40 h-40 lg:w-64 lg:h-64 obsidian-panel rotate-45 flex items-center justify-center border border-primary/40 shadow-[0_0_50px_rgba(0,229,255,0.15)]">
+          <div class="absolute inset-2 border border-primary/20"></div>
+          <div class="relative -rotate-45 flex flex-col items-center gap-4">
+            <span class="material-symbols-outlined text-primary text-7xl lg:text-8xl" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+            <div class="font-headline text-[10px] font-bold tracking-[0.4em] text-primary/80 animate-pulse uppercase">Sentry Active</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute top-0 right-0 p-4 obsidian-panel border border-primary/20 text-[9px] font-mono text-primary/70 leading-relaxed uppercase tracking-widest hidden lg:block">
+        [ANALYSIS_PROTOCOL_v4]<br/>
+        &gt; ENCRYPTION: AES-Q512<br/>
+        &gt; SHIELD_STRENGTH: 98.4%<br/>
+        &gt; NODE_STATUS: SYNCED
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Strategic Defense Verticals ───────────────────────────────────────── -->
+<section class="py-32 px-8 bg-surface-container-lowest border-y border-outline-variant/10 relative overflow-hidden" id="verticals">
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+      <div>
+        <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Strategic Architecture</span>
+        <h2 class="text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Defense <span class="text-primary">Verticals</span></h2>
+      </div>
+      <div class="text-right hidden md:block">
+        <div class="font-mono text-[9px] text-on-surface-variant uppercase tracking-widest">SENTRY_GRID_v2.0</div>
+        <div class="h-[1px] w-64 bg-primary/30 mt-2 ml-auto"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Vertical 1: Personal Protection -->
+      <div class="obsidian-panel p-8 border border-primary/10 hover:border-primary/40 transition-all duration-500 group relative">
+        <div class="absolute top-4 right-4 text-[9px] font-mono text-primary/30">V.01</div>
+        <div class="w-12 h-12 bg-primary/5 border border-primary/20 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-surface-dim transition-all">
+          <span class="material-symbols-outlined">shield</span>
+        </div>
+        <h3 class="font-headline font-bold text-lg uppercase tracking-wider mb-4">Elite Personal Protection</h3>
+        <p class="text-sm text-on-surface-variant mb-8 line-clamp-3">Full-spectrum kinetic and digital safeguarding for high-profile assets and individuals.</p>
+        <ul class="space-y-3 text-[10px] font-bold uppercase tracking-widest text-primary/70">
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Counter-Surveillance</li>
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Tactical Extraction</li>
+        </ul>
+      </div>
+
+      <!-- Vertical 2: Infrastructure -->
+      <div class="obsidian-panel p-8 border border-primary/10 hover:border-primary/40 transition-all duration-500 group relative">
+        <div class="absolute top-4 right-4 text-[9px] font-mono text-primary/30">V.02</div>
+        <div class="w-12 h-12 bg-primary/5 border border-primary/20 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-surface-dim transition-all">
+          <span class="material-symbols-outlined">apartment</span>
+        </div>
+        <h3 class="font-headline font-bold text-lg uppercase tracking-wider mb-4">Infrastructure Hardening</h3>
+        <p class="text-sm text-on-surface-variant mb-8 line-clamp-3">Physical reinforcement and smart sensor integration for critical data and utility centers.</p>
+        <ul class="space-y-3 text-[10px] font-bold uppercase tracking-widest text-primary/70">
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Perimeter Lockdown</li>
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Signal Jamming</li>
+        </ul>
+      </div>
+
+      <!-- Vertical 3: Remote Intel -->
+      <div class="obsidian-panel p-8 border border-primary/10 hover:border-primary/40 transition-all duration-500 group relative">
+        <div class="absolute top-4 right-4 text-[9px] font-mono text-primary/30">V.03</div>
+        <div class="w-12 h-12 bg-primary/5 border border-primary/20 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-surface-dim transition-all">
+          <span class="material-symbols-outlined">satellite_alt</span>
+        </div>
+        <h3 class="font-headline font-bold text-lg uppercase tracking-wider mb-4">Remote Intel Intelligence</h3>
+        <p class="text-sm text-on-surface-variant mb-8 line-clamp-3">24/7 global monitoring via orbital link and AI-driven predictive threat analytics.</p>
+        <ul class="space-y-3 text-[10px] font-bold uppercase tracking-widest text-primary/70">
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Satellite Feed</li>
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Pattern Recognition</li>
+        </ul>
+      </div>
+
+      <!-- Vertical 4: Autonomous -->
+      <div class="obsidian-panel p-8 border border-primary/10 hover:border-primary/40 transition-all duration-500 group relative">
+        <div class="absolute top-4 right-4 text-[9px] font-mono text-primary/30">V.04</div>
+        <div class="w-12 h-12 bg-primary/5 border border-primary/20 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-surface-dim transition-all">
+          <span class="material-symbols-outlined">security_update_good</span>
+        </div>
+        <h3 class="font-headline font-bold text-lg uppercase tracking-wider mb-4">Autonomous Response</h3>
+        <p class="text-sm text-on-surface-variant mb-8 line-clamp-3">Unmanned ground and air defense units linked to Sentry Core command nodes.</p>
+        <ul class="space-y-3 text-[10px] font-bold uppercase tracking-widest text-primary/70">
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Drone Swarm</li>
+          <li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary"></span> Neural Intercept</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Tactical Operations Map ──────────────────────────────────────────── -->
+<section class="py-32 px-8 bg-surface-dim relative overflow-hidden" id="ops">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+    <!-- Map Visualization -->
+    <div class="flex-1 w-full order-2 lg:order-1">
+      <div class="relative aspect-video rounded-xl overflow-hidden border border-primary/20 obsidian-panel shadow-[0_0_100px_rgba(0,229,255,0.05)]">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuv0Ub61kQ1149acnRLlBPdTwOo_PyCQ24wg9yI4v8gXr3rCcdsgLv_hjXAR0RHHpHXH31u5Xi4d0rTTlyJ5MKl8L74TTGVEXfm353ogldq5qV_zQ8xCf0DF-Qc8rq5tHrdZE9kmB6BvCEsn_bgB2viW2DA5ObMxGUqURim8y5zffFFVBOQYdajLXkqOmIObjwPh9TSlBTI4XB5181FOi5Mk10PapCZqlJK6vEUE6C8baEIlFEnlfSaTCGxSCNxX1XM-P8doDMJqcU'); background-size: cover; filter: grayscale(1) invert(1);"></div>
+        <div class="absolute inset-0 grid-bg opacity-30"></div>
+
+        <!-- Pulsing map nodes -->
+        <div class="absolute top-[30%] left-[25%] map-ping w-4 h-4 rounded-full bg-primary/40"></div>
+        <div class="absolute top-[30%] left-[25%] w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_10px_#00E5FF]"></div>
+        <div class="absolute top-[60%] left-[70%] map-ping w-4 h-4 rounded-full bg-primary/40" style="animation-delay: 1s;"></div>
+        <div class="absolute top-[60%] left-[70%] w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_10px_#00E5FF]"></div>
+        <div class="absolute top-[45%] left-[55%] map-ping w-4 h-4 rounded-full bg-primary/40" style="animation-delay: 2s;"></div>
+        <div class="absolute top-[45%] left-[55%] w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_10px_#00E5FF]"></div>
+
+        <!-- Overlay HUD -->
+        <div class="absolute top-6 left-6 flex flex-col gap-2">
+          <div class="px-3 py-1 bg-primary text-surface-dim font-headline text-[8px] font-black uppercase tracking-widest">LIVE_SURVEILLANCE</div>
+          <div class="px-3 py-1 bg-surface-dim/80 border border-primary/20 text-primary font-mono text-[8px] uppercase tracking-widest">ACTIVE_UNITS: 1,422</div>
+        </div>
+        <div class="absolute bottom-6 right-6 p-4 obsidian-panel border border-primary/10 max-w-[200px]">
+          <div class="text-[8px] font-mono text-primary/50 mb-2 uppercase">Region_Analysis [7A]</div>
+          <div class="w-full h-1 bg-primary/10 mb-2 overflow-hidden">
+            <div class="w-2/3 h-full bg-primary animate-[pulse_2s_infinite]"></div>
+          </div>
+          <div class="text-[7px] text-on-surface-variant font-mono">STABILITY_RATING: 92.8%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copy -->
+    <div class="lg:w-1/3 order-1 lg:order-2">
+      <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Global Presence</span>
+      <h2 class="text-5xl font-headline font-black uppercase italic tracking-tighter mb-8 leading-tight">Tactical <br/><span class="text-primary">Operations</span> Map</h2>
+      <p class="text-on-surface-variant text-lg font-light leading-relaxed mb-10">
+        Real-time visualization of our global defense network. Each node represents an active tactical team or hardened facility ready for immediate deployment.
+      </p>
+      <div class="space-y-6">
+        <div class="flex items-center gap-6 p-4 obsidian-panel border-l-4 border-l-primary group cursor-crosshair">
+          <div class="text-2xl font-headline font-black text-primary/30 group-hover:text-primary transition-colors italic">01</div>
+          <div>
+            <div class="font-headline text-xs font-bold uppercase tracking-widest text-white">EMEA Command Hub</div>
+            <div class="text-[10px] text-on-surface-variant uppercase mt-1">London, United Kingdom</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 p-4 obsidian-panel border-l-4 border-l-transparent hover:border-l-primary transition-all group cursor-crosshair">
+          <div class="text-2xl font-headline font-black text-primary/30 group-hover:text-primary transition-colors italic">02</div>
+          <div>
+            <div class="font-headline text-xs font-bold uppercase tracking-widest text-white">Pacific Ops Node</div>
+            <div class="text-[10px] text-on-surface-variant uppercase mt-1">Singapore</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 p-4 obsidian-panel border-l-4 border-l-transparent hover:border-l-primary transition-all group cursor-crosshair">
+          <div class="text-2xl font-headline font-black text-primary/30 group-hover:text-primary transition-colors italic">03</div>
+          <div>
+            <div class="font-headline text-xs font-bold uppercase tracking-widest text-white">Americas Core Delta</div>
+            <div class="text-[10px] text-on-surface-variant uppercase mt-1">Austin, USA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Command Leadership Team ──────────────────────────────────────────── -->
+<section class="py-32 px-8 bg-surface-container-lowest relative" id="team">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-24">
+      <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Human Intelligence</span>
+      <h2 class="text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Command <span class="text-primary">Leadership</span></h2>
+      <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- Marcus Vance -->
+      <div class="group">
+        <div class="relative mb-8 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] border border-primary/10">
+          <img alt="Marcus Vance — Chief Operations Commander" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9fvynWSrBFpvV_6rZJkN3hIx84aLgj6_g8L9XzcHcdomGS8VqFqFLXD1jinhwKnXSuduU03xsmzOCYLBLEhgnTneqzr1UT93ZGDgxzZWdKCSFHJ6eVjNUeYGtBUPchjWsroEpNXN78SNrMukZi7ENgBlu8zQKWL7ecb0a-vd9Ouyk0iSlFrVplFYDqp0u8OqarTGPIvBoMmrXNvDnpsbVB7yOgJnbOY3wt4V5JTJOyH576tf5WE0weKxHHMRs42XClF6XKyOxR4Z6"/>
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-surface-dim to-transparent">
+            <div class="flex gap-4">
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">terminal</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="font-headline font-black text-xl uppercase italic tracking-widest text-white mb-2">Marcus Vance</div>
+          <div class="font-label text-[10px] text-primary uppercase tracking-widest font-bold">Chief Operations Commander</div>
+          <div class="mt-4 h-px w-12 bg-primary/20 mx-auto group-hover:w-full transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Elena Rossi -->
+      <div class="group">
+        <div class="relative mb-8 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] border border-primary/10">
+          <img alt="Elena Rossi — Intelligence Director" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdWgj6IGTZxAc8CLXJjEXUpZja6-m3JDac2TY_2qn6-MKVF5vTGKkWfex9-dCiFC6NMwUbGalJz19j6e8tvqFXSlTzzeXOsIZghzq6THM4WiNao3bNUwtzvaOnN-mdsk-otJOhMTJMmHhrfx_dr8xph-7VoYMl0lTWkvlqn4VaCADuHFItLeLJuLNHoSGofZt0BDsw24iaMFjdzL5SfKF2c1T3H7RwoGryuatFbB3Sf1aRq7ZH4XoZlE5ur5audxPs6cS0B2rgAmCO"/>
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-surface-dim to-transparent">
+            <div class="flex gap-4">
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">security</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="font-headline font-black text-xl uppercase italic tracking-widest text-white mb-2">Elena Rossi</div>
+          <div class="font-label text-[10px] text-primary uppercase tracking-widest font-bold">Intelligence Director</div>
+          <div class="mt-4 h-px w-12 bg-primary/20 mx-auto group-hover:w-full transition-all duration-500"></div>
+        </div>
+      </div>
+
+      <!-- Dr. Julian Thorne -->
+      <div class="group">
+        <div class="relative mb-8 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] border border-primary/10">
+          <img alt="Dr. Julian Thorne — Head of Cyber-Tactical Systems" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDodyFpRUM-o7v9_kohUgHfKwOR7bF8qnGyHImPlaGb5kX3bC6SA7khLBFABQwGEZ7sfeUFl4Ars3alQKESdd-u1OwBGBfvgVMbEDKXwccFrlCMrSs0_pCey6pcw1mag76gy914ivL6sHt6Pa3lTm01dhaZOB6RUWUh-_kOT3Xbx4DPzSWd7b38Odcn-CF6udtGyIgk8C3jxmRRhW-dyE30UkaCCw-LOATaNhcDBn5IT4rAtBHQJ03ihYFzzlI-XIFSqWfq_reLMY8N"/>
+          <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-0 left-0 w-full p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-surface-dim to-transparent">
+            <div class="flex gap-4">
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">share</span></a>
+              <a class="w-8 h-8 rounded-full border border-primary/40 flex items-center justify-center hover:bg-primary hover:text-surface-dim" href="#"><span class="material-symbols-outlined text-sm">settings_input_component</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="font-headline font-black text-xl uppercase italic tracking-widest text-white mb-2">Dr. Julian Thorne</div>
+          <div class="font-label text-[10px] text-primary uppercase tracking-widest font-bold">Head of Cyber-Tactical Systems</div>
+          <div class="mt-4 h-px w-12 bg-primary/20 mx-auto group-hover:w-full transition-all duration-500"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Partners Marquee ─────────────────────────────────────────────────── -->
+<section class="py-20 bg-surface-dim border-b border-outline-variant/10 overflow-hidden relative">
+  <div class="absolute top-0 left-0 px-8 font-mono text-[8px] text-primary/30 py-4">PARTNER_NODES_VERIFIED</div>
+  <div class="marquee-track">
+    <div class="flex items-center justify-around w-[1250px] opacity-20 hover:opacity-100 transition-opacity duration-700">
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">HEXAGON_GROUP</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">AERO_DYNE</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">VOID_LOGISTICS</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">CORE_TITAN</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">NEURAL_SYS</span>
+    </div>
+    <div class="flex items-center justify-around w-[1250px] opacity-20 hover:opacity-100 transition-opacity duration-700">
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">HEXAGON_GROUP</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">AERO_DYNE</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">VOID_LOGISTICS</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">CORE_TITAN</span>
+      <span class="font-headline font-black text-2xl tracking-[-0.1em] italic">NEURAL_SYS</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── Testimonial + Contact CTA ────────────────────────────────────────── -->
+<section class="grid grid-cols-1 lg:grid-cols-2 bg-surface-container-lowest">
+  <!-- Testimonial -->
+  <div class="p-16 lg:p-32 bg-surface-container-low flex flex-col justify-center relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+    <span class="font-label text-[10px] text-primary uppercase tracking-[0.4em] font-bold mb-12">Transmission Decrypted</span>
+    <div class="relative">
+      <span class="material-symbols-outlined text-primary/10 text-[160px] absolute -top-16 -left-16 pointer-events-none">format_quote</span>
+      <p class="text-3xl lg:text-4xl font-headline font-light italic leading-tight relative z-10 text-white">
+        "The <span class="text-primary font-bold">SENTRY_CORE</span> integration reduced our perimeter breaches to absolute zero. Their tactical precision is the industry benchmark."
+      </p>
+      <div class="mt-12 flex items-center gap-6">
+        <div class="w-16 h-16 rounded-full obsidian-panel border border-primary/30 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">person_filled</span>
+        </div>
+        <div>
+          <div class="font-headline font-bold text-sm uppercase tracking-widest text-white">COMMANDER V. SULLIVAN</div>
+          <div class="font-label text-[9px] text-primary uppercase tracking-widest font-bold">Global Ops Director, HEXAGON</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Contact Form -->
+  <div class="p-16 lg:p-32 border-l border-outline-variant/10 relative">
+    <div class="max-w-md mx-auto lg:ml-0">
+      <h2 class="text-4xl font-headline font-black mb-4 uppercase tracking-tighter italic">Request <span class="text-primary">Protocol</span></h2>
+      <p class="text-on-surface-variant text-sm mb-12 font-light">Initiate a secure, multi-encrypted channel for tactical consultation.</p>
+      <form class="space-y-8" action="#" onsubmit="return false;">
+        <div class="space-y-2 group">
+          <label class="font-label text-[9px] uppercase tracking-[0.3em] text-on-surface-variant group-focus-within:text-primary transition-colors">Identification</label>
+          <input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-white px-0 py-4 placeholder:text-outline-variant transition-all" placeholder="Enter Full Legal Name" type="text"/>
+        </div>
+        <div class="space-y-2 group">
+          <label class="font-label text-[9px] uppercase tracking-[0.3em] text-on-surface-variant group-focus-within:text-primary transition-colors">Comm Node</label>
+          <input class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-white px-0 py-4 placeholder:text-outline-variant transition-all" placeholder="Encrypted Email Address" type="email"/>
+        </div>
+        <div class="space-y-2 group">
+          <label class="font-label text-[9px] uppercase tracking-[0.3em] text-on-surface-variant group-focus-within:text-primary transition-colors">Operational Scope</label>
+          <select class="w-full bg-transparent border-0 border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-white px-0 py-4 appearance-none">
+            <option class="bg-surface-dim">RESIDENTIAL_ESTATE</option>
+            <option class="bg-surface-dim">COMMERCIAL_GRID</option>
+            <option class="bg-surface-dim">CYBER_PHYSICAL_ASSET</option>
+            <option class="bg-surface-dim">MARITIME_DEFENSE</option>
+          </select>
+        </div>
+        <button class="w-full py-6 bg-primary text-on-primary-container font-headline font-black uppercase tracking-[0.3em] text-xs mt-12 glow-hover transition-all duration-300 active:scale-95 shadow-[0_0_30px_rgba(0,229,255,0.1)]" type="submit">
+          Establish Connection
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+{{ end }}

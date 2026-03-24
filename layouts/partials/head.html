@@ -1,0 +1,180 @@
+<!-- ═══════════════════════════════════════════════════════════════════════
+     SecureGuard — <head> Partial
+     Unified Tailwind CDN config, fonts, icons, and custom CSS
+     ═══════════════════════════════════════════════════════════════════════ -->
+
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Page Title (set by each template) -->
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | SecureGuard{{ end }}</title>
+
+<!-- ── SEO Meta ──────────────────────────────────────────────────────────── -->
+{{ partial "seo.html" . }}
+
+<!-- ── Fonts: Space Grotesk (Display) + Inter (Body) + JetBrains Mono ──── -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet"/>
+
+<!-- ── Material Symbols (Icons) ─────────────────────────────────────────── -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<!-- ── Tailwind CDN + Unified Config ────────────────────────────────────── -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        /* ── Primary System ─────────────────────────────── */
+        "primary":            "#00E5FF",
+        "primary-dark":       "#04a9bc",
+        "primary-container":  "#00daf3",
+        "primary-fixed":      "#9cf0ff",
+        "primary-fixed-dim":  "#00daf3",
+
+        /* ── Backgrounds ────────────────────────────────── */
+        "background":         "#080a0f",
+        "background-dark":    "#05070A",
+        "background-light":   "#f5f8f8",
+
+        /* ── Surface Tokens (Obsidian Layers) ───────────── */
+        "surface":                  "#0C121D",
+        "surface-dim":              "#080a0f",
+        "surface-bright":           "#1a1e26",
+        "surface-variant":          "#1c2128",
+        "surface-container":        "#12161d",
+        "surface-container-low":    "#0d1117",
+        "surface-container-high":   "#161b22",
+        "surface-container-highest":"#22272e",
+        "surface-container-lowest": "#05070a",
+        "surface-hover":            "#1A2235",
+        "surface-tint":             "#00daf3",
+
+        /* ── Text & On-Colors ───────────────────────────── */
+        "text-main":              "#F8FAFC",
+        "on-surface":             "#e0e2eb",
+        "on-surface-variant":     "#bac9cc",
+        "on-primary":             "#00363d",
+        "on-primary-container":   "#001f24",
+        "on-primary-fixed":       "#001f24",
+        "on-primary-fixed-variant":"#004f58",
+        "on-background":          "#e0e2eb",
+        "on-error":               "#690005",
+        "on-error-container":     "#ffdad6",
+        "on-secondary":           "#00363d",
+        "on-secondary-container": "#8ac1cc",
+        "on-secondary-fixed":     "#001f24",
+        "on-secondary-fixed-variant":"#0d4e57",
+        "on-tertiary":            "#3e2e00",
+        "on-tertiary-container":  "#6f5500",
+        "on-tertiary-fixed":      "#251a00",
+        "on-tertiary-fixed-variant":"#594400",
+
+        /* ── Secondary / Tertiary ───────────────────────── */
+        "secondary":            "#98d0da",
+        "secondary-container":  "#11505a",
+        "secondary-fixed":      "#b3ecf7",
+        "secondary-fixed-dim":  "#98d0da",
+        "tertiary":             "#ffeac0",
+        "tertiary-container":   "#fec931",
+        "tertiary-fixed":       "#ffdf96",
+        "tertiary-fixed-dim":   "#f3bf26",
+
+        /* ── Error ──────────────────────────────────────── */
+        "error":            "#ffb4ab",
+        "error-container":  "#93000a",
+
+        /* ── Utility Colors ─────────────────────────────── */
+        "muted":  "#64748B",
+        "accent": "#3B82F6",
+        "alert":  "#FF3366",
+
+        /* ── Borders & Outlines ─────────────────────────── */
+        "border-dark":      "#1E293B",
+        "border-color":     "#1E293B",
+        "outline":          "#4a5b5e",
+        "outline-variant":  "#2a3538",
+
+        /* ── Inverse ────────────────────────────────────── */
+        "inverse-primary":      "#006875",
+        "inverse-surface":      "#e0e2eb",
+        "inverse-on-surface":   "#2d3037",
+      },
+
+      fontFamily: {
+        "headline": ["Space Grotesk", "sans-serif"],
+        "display":  ["Space Grotesk", "sans-serif"],
+        "body":     ["Inter", "Archivo", "sans-serif"],
+        "label":    ["Inter", "sans-serif"],
+        "mono":     ["JetBrains Mono", "monospace"],
+      },
+
+      borderRadius: {
+        "DEFAULT": "2px",
+        "sm":   "2px",
+        "lg":   "4px",
+        "xl":   "8px",
+        "full": "9999px",
+      },
+
+      letterSpacing: {
+        "tight":  "-0.02em",
+        "widest": "0.15em",
+        "button": "0.1em",
+      },
+
+      boxShadow: {
+        "glow":        "0 0 20px rgba(0, 229, 255, 0.15)",
+        "glow-active": "0 0 30px rgba(0, 229, 255, 0.3)",
+        "glow-strong": "0 0 30px rgba(0, 229, 255, 0.3)",
+        "inner-glow":  "inset 0 0 15px rgba(0, 229, 255, 0.05)",
+        "glass":       "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+      },
+
+      animation: {
+        "scanline":       "scanline-sweep 8s linear infinite",
+        "pulse-slow":     "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "pulse-glow":     "pulse-glow 2s ease-in-out infinite",
+        "flicker":        "flicker 2s infinite",
+        "float":          "float 6s ease-in-out infinite",
+        "reveal-up":      "reveal-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "counter-reveal": "counter-reveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+      },
+
+      keyframes: {
+        "scanline-sweep": {
+          "0%":   { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(100%)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "0.3", boxShadow: "0 0 15px rgba(0,229,255,0.1)" },
+          "50%":      { opacity: "0.6", boxShadow: "0 0 25px rgba(0,229,255,0.3)" },
+        },
+        "flicker": {
+          "0%, 100%": { opacity: "1" },
+          "33%":      { opacity: "0.8" },
+          "66%":      { opacity: "0.95" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%":      { transform: "translateY(-10px)" },
+        },
+        "reveal-up": {
+          "0%":   { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "counter-reveal": {
+          "from": { opacity: "0", transform: "translateY(10px)" },
+          "to":   { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+    },
+  },
+}
+</script>
+
+<!-- ── Unified Custom Stylesheet ────────────────────────────────────────── -->
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}"/>

@@ -1,0 +1,51 @@
+##############################################################################
+# SecureGuard — Hugo Configuration
+# Tactical Security Systems Demo Site
+##############################################################################
+
+baseURL       = '/'
+languageCode  = 'en-us'
+title         = 'SecureGuard | Tactical Security Systems'
+relativeURLs  = true
+uglyURLs      = false
+
+# ── Site-wide Parameters ────────────────────────────────────────────────────
+[params]
+  description   = "Military-grade, cyber-physical protection systems engineered for the world's most critical assets. Elite defense architectures by SecureGuard."
+  author        = "SecureGuard Tactical Systems"
+  tagline       = "Obsidian-Grade Security"
+  year          = "2024"
+  ogImage       = "/images/og-secureguard.jpg"
+
+# ── Primary Navigation Menu ─────────────────────────────────────────────────
+[menus]
+  [[menus.main]]
+    name   = "Home"
+    url    = "/"
+    weight = 1
+
+  [[menus.main]]
+    name   = "Services"
+    url    = "/services/"
+    weight = 2
+
+  [[menus.main]]
+    name   = "Technology"
+    url    = "/technology/"
+    weight = 3
+
+# ── Build & Output Settings ─────────────────────────────────────────────────
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+
+# Disable unused taxonomies
+[taxonomies]
+
+[build]
+  writeStats = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
