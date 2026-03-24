@@ -12,7 +12,7 @@
 
       <!-- Brand Block -->
       <div class="max-w-xs">
-        <a href="{{ "/" | relURL }}" class="text-2xl font-black text-primary font-headline tracking-[0.2em] mb-6 block hover:drop-shadow-[0_0_10px_rgba(0,229,255,0.4)] transition-all">SECUREGUARD</a>
+        <a href="{{ .Site.Home.RelPermalink }}" class="text-2xl font-black text-primary font-headline tracking-[0.2em] mb-6 block hover:drop-shadow-[0_0_10px_rgba(0,229,255,0.4)] transition-all">SECUREGUARD</a>
         <p class="text-on-surface-variant text-[10px] leading-relaxed uppercase tracking-widest font-bold opacity-60">
           Defending global interests with obsidian-grade security architectures and tactical physical dominance.
         </p>
@@ -32,8 +32,8 @@
         <div class="space-y-4">
           <div class="text-[10px] text-primary uppercase font-bold tracking-widest">Company</div>
           <div class="flex flex-col gap-2 text-[9px] uppercase tracking-widest font-bold">
-            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "/" | relURL }}">Command Center</a>
-            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "/" | relURL }}#team">Elite Careers</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ .Site.Home.RelPermalink }}">Command Center</a>
+            <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ .Site.Home.RelPermalink }}#team">Elite Careers</a>
             <a class="text-on-surface-variant hover:text-white transition-colors" href="{{ "quote/" | relURL }}">Contact Node</a>
           </div>
         </div>

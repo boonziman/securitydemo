@@ -15,7 +15,7 @@
 
 <!-- ── Minimal Header ──────────────────────────────────────────────────── -->
 <div class="fixed top-0 left-0 w-full p-8 z-50 flex items-center justify-between">
-  <a class="group flex items-center gap-3 text-muted hover:text-primary transition-colors cursor-pointer" href="{{ "/" | relURL }}">
+  <a class="group flex items-center gap-3 text-muted hover:text-primary transition-colors cursor-pointer" href="{{ .Site.Home.RelPermalink }}">
     <span class="material-symbols-outlined text-xl group-hover:-translate-x-1 transition-transform">arrow_back</span>
     <span class="font-display uppercase tracking-widest text-[10px] font-bold">Return to Base</span>
   </a>
@@ -151,7 +151,7 @@
         <span class="text-primary font-display font-bold text-lg uppercase">Armed</span>
       </div>
     </div>
-    <a href="{{ "/" | relURL }}" class="w-full h-14 border border-primary/50 text-primary font-display font-bold text-[12px] uppercase tracking-widest hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center justify-center">
+    <a href="{{ .Site.Home.RelPermalink }}" class="w-full h-14 border border-primary/50 text-primary font-display font-bold text-[12px] uppercase tracking-widest hover:bg-primary hover:text-background-dark transition-all duration-300 flex items-center justify-center">
       Access Dashboard
     </a>
   </div>

@@ -3,10 +3,9 @@
 # Tactical Security Systems Demo Site
 ##############################################################################
 
-baseURL       = '/'
+baseURL       = 'https://boonziman.github.io/securitydemo/'
 languageCode  = 'en-us'
 title         = 'SecureGuard | Tactical Security Systems'
-relativeURLs  = true
 uglyURLs      = false
 
 # ── Site-wide Parameters ────────────────────────────────────────────────────
