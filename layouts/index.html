@@ -6,37 +6,37 @@
      ═══════════════════════════════════════════════════════════════════════ -->
 
 <!-- ── Hero Section ─────────────────────────────────────────────────────── -->
-<section class="relative min-h-screen flex items-center px-8 lg:px-24 grid-bg" id="systems">
+<section class="relative min-h-screen flex items-center px-6 md:px-8 lg:px-24 grid-bg" id="systems">
   <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface-dim/50 to-surface-dim pointer-events-none"></div>
 
-  <div class="grid lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto z-10 pt-16">
+  <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center w-full max-w-7xl mx-auto z-10 pt-28 md:pt-32">
     <!-- Left: Copy -->
     <div class="relative">
-      <div class="inline-flex items-center gap-3 mb-8 px-4 py-1.5 obsidian-panel rounded-full border border-primary/20">
+      <div class="inline-flex items-center gap-3 mb-6 md:mb-8 px-4 py-1.5 obsidian-panel rounded-full border border-primary/20">
         <span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
         <span class="text-[9px] font-label uppercase tracking-[0.3em] text-primary font-bold">Orbital Link: ESTABLISHED</span>
       </div>
 
-      <h1 class="text-7xl lg:text-[100px] font-headline font-black leading-[0.9] tracking-tighter mb-8 uppercase italic">
-        <span class="text-white opacity-20 block text-4xl mb-4 not-italic tracking-widest">TACTICAL_SHIELD</span>
+      <h1 class="text-5xl md:text-7xl lg:text-[100px] font-headline font-black leading-[0.9] tracking-tighter mb-6 md:mb-8 uppercase italic">
+        <span class="text-white opacity-20 block text-2xl md:text-4xl mb-3 md:mb-4 not-italic tracking-widest">TACTICAL_SHIELD</span>
         Protecting<br/><span class="text-primary drop-shadow-[0_0_15px_rgba(0,229,255,0.4)]">The Core</span>
       </h1>
 
-      <p class="text-on-surface-variant max-w-lg mb-12 text-lg leading-relaxed font-light border-l-2 border-primary/20 pl-6">
+      <p class="text-on-surface-variant max-w-lg mb-8 md:mb-12 text-base md:text-lg leading-relaxed font-light border-l-2 border-primary/20 pl-6">
         Next-generation obsidian-grade surveillance and tactical physical security unified into a single command architecture. Global defense, local dominance.
       </p>
 
-      <div class="flex flex-wrap gap-6">
-        <a href="{{ "quote/" | relURL }}" class="px-10 py-5 bg-primary text-on-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs glow-hover flex items-center gap-3 transition-all">
+      <div class="flex flex-wrap gap-4 md:gap-6">
+        <a href="{{ "quote/" | relURL }}" class="px-6 py-4 md:px-10 md:py-5 bg-primary text-on-primary-container font-headline font-bold uppercase tracking-[0.2em] text-xs glow-hover flex items-center gap-3 transition-all">
           Initialize Deployment
           <span class="material-symbols-outlined text-sm">bolt</span>
         </a>
-        <a href="#ops" class="px-10 py-5 border border-outline-variant text-white font-headline uppercase tracking-[0.2em] text-xs hover:bg-white/5 transition-all">
+        <a href="#ops" class="px-6 py-4 md:px-10 md:py-5 border border-outline-variant text-white font-headline uppercase tracking-[0.2em] text-xs hover:bg-white/5 transition-all">
           View Threat Map
         </a>
       </div>
 
-      <div class="mt-16 flex gap-12 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/60">
+      <div class="mt-10 md:mt-16 flex flex-wrap gap-6 md:gap-12 font-label text-[10px] uppercase tracking-widest text-on-surface-variant/60">
         <div><span class="text-primary">LAT:</span> 51.5074° N</div>
         <div><span class="text-primary">LNG:</span> 0.1278° W</div>
         <div><span class="text-primary">SEC:</span> LEVEL_7</div>
@@ -44,8 +44,8 @@
     </div>
 
     <!-- Right: Shield Graphic -->
-    <div class="relative aspect-square flex items-center justify-center">
-      <div class="relative w-80 h-80 lg:w-[500px] lg:h-[500px] flex items-center justify-center floating">
+    <div class="relative aspect-square flex items-center justify-center hidden md:flex">
+      <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-[500px] lg:h-[500px] flex items-center justify-center floating">
         <div class="absolute inset-0 border-[1px] border-primary/10 rounded-full animate-[spin_40s_linear_infinite] border-dashed"></div>
         <div class="absolute inset-8 border-[2px] border-primary/20 rounded-[40%] animate-[spin_25s_linear_infinite_reverse]"></div>
         <div class="absolute inset-16 border-[1px] border-primary/40 rounded-full animate-[spin_15s_linear_infinite] flex items-start justify-center">
@@ -77,7 +77,7 @@
     <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
       <div>
         <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Strategic Architecture</span>
-        <h2 class="text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Defense <span class="text-primary">Verticals</span></h2>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Defense <span class="text-primary">Verticals</span></h2>
       </div>
       <div class="text-right hidden md:block">
         <div class="font-mono text-[9px] text-on-surface-variant uppercase tracking-widest">SENTRY_GRID_v2.0</div>
@@ -181,7 +181,7 @@
     <!-- Copy -->
     <div class="lg:w-1/3 order-1 lg:order-2">
       <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Global Presence</span>
-      <h2 class="text-5xl font-headline font-black uppercase italic tracking-tighter mb-8 leading-tight">Tactical <br/><span class="text-primary">Operations</span> Map</h2>
+      <h2 class="text-3xl md:text-5xl font-headline font-black uppercase italic tracking-tighter mb-6 md:mb-8 leading-tight">Tactical <br/><span class="text-primary">Operations</span> Map</h2>
       <p class="text-on-surface-variant text-lg font-light leading-relaxed mb-10">
         Real-time visualization of our global defense network. Each node represents an active tactical team or hardened facility ready for immediate deployment.
       </p>
@@ -218,7 +218,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-24">
       <span class="font-label text-[10px] text-primary uppercase tracking-[0.5em] font-bold mb-4 block">Human Intelligence</span>
-      <h2 class="text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Command <span class="text-primary">Leadership</span></h2>
+      <h2 class="text-3xl md:text-5xl lg:text-6xl font-headline font-black uppercase italic tracking-tighter">Command <span class="text-primary">Leadership</span></h2>
       <div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
     </div>
 
@@ -309,12 +309,12 @@
 <!-- ── Testimonial + Contact CTA ────────────────────────────────────────── -->
 <section class="grid grid-cols-1 lg:grid-cols-2 bg-surface-container-lowest">
   <!-- Testimonial -->
-  <div class="p-16 lg:p-32 bg-surface-container-low flex flex-col justify-center relative overflow-hidden">
+  <div class="p-8 md:p-16 lg:p-32 bg-surface-container-low flex flex-col justify-center relative overflow-hidden">
     <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
     <span class="font-label text-[10px] text-primary uppercase tracking-[0.4em] font-bold mb-12">Transmission Decrypted</span>
     <div class="relative">
       <span class="material-symbols-outlined text-primary/10 text-[160px] absolute -top-16 -left-16 pointer-events-none">format_quote</span>
-      <p class="text-3xl lg:text-4xl font-headline font-light italic leading-tight relative z-10 text-white">
+      <p class="text-xl md:text-3xl lg:text-4xl font-headline font-light italic leading-tight relative z-10 text-white">
         "The <span class="text-primary font-bold">SENTRY_CORE</span> integration reduced our perimeter breaches to absolute zero. Their tactical precision is the industry benchmark."
       </p>
       <div class="mt-12 flex items-center gap-6">
@@ -330,10 +330,10 @@
   </div>
 
   <!-- Quick Contact Form -->
-  <div class="p-16 lg:p-32 border-l border-outline-variant/10 relative">
+  <div class="p-8 md:p-16 lg:p-32 border-t lg:border-t-0 border-l-0 lg:border-l border-outline-variant/10 relative">
     <div class="max-w-md mx-auto lg:ml-0">
-      <h2 class="text-4xl font-headline font-black mb-4 uppercase tracking-tighter italic">Request <span class="text-primary">Protocol</span></h2>
-      <p class="text-on-surface-variant text-sm mb-12 font-light">Initiate a secure, multi-encrypted channel for tactical consultation.</p>
+      <h2 class="text-3xl md:text-4xl font-headline font-black mb-4 uppercase tracking-tighter italic">Request <span class="text-primary">Protocol</span></h2>
+      <p class="text-on-surface-variant text-sm mb-8 md:mb-12 font-light">Initiate a secure, multi-encrypted channel for tactical consultation.</p>
       <form class="space-y-8" action="#" onsubmit="return false;">
         <div class="space-y-2 group">
           <label class="font-label text-[9px] uppercase tracking-[0.3em] text-on-surface-variant group-focus-within:text-primary transition-colors">Identification</label>

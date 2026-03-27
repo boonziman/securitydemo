@@ -36,11 +36,14 @@
   }
 
 
-  /* ── Subtle Background Parallax ─────────────────────────────────────── */
-  window.addEventListener("scroll", () => {
-    const scrolled = window.pageYOffset;
-    document.body.style.backgroundPosition = `0 ${scrolled * 0.1}px`;
-  }, { passive: true });
+  /* ── Subtle Background Parallax (disabled on touch devices) ──────── */
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  if (!isTouchDevice) {
+    window.addEventListener("scroll", () => {
+      const scrolled = window.pageYOffset;
+      document.body.style.backgroundPosition = `0 ${scrolled * 0.1}px`;
+    }, { passive: true });
+  }
 
 
   /* ── Intersection Observer: Reveal on Scroll ────────────────────────── */

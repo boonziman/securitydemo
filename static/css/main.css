@@ -342,3 +342,41 @@
   border-radius: 50%;
   box-shadow: 0 0 10px #00E5FF;
 }
+
+/* ── Mobile Optimizations ──────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .scanline-home::before,
+  .scanline-thin::before {
+    animation-duration: 12s; /* slower scanline on mobile to reduce jank */
+  }
+  .floating {
+    animation-duration: 8s;
+  }
+  /* Ensure radio tiles are touch-friendly */
+  .radio-tile-content {
+    min-height: 72px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 229, 255, 0.1);
+  }
+  /* Ensure map nodes pulse smoothly on mobile */
+  .map-ping {
+    animation-duration: 3s;
+  }
+}
+
+/* ── Reduce motion for accessibility ──────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .floating,
+  .scanline-home::before,
+  .scanline-thin::before,
+  .scan-line::before,
+  .scan-line-slow::before,
+  .map-ping,
+  .pulse-ring::after,
+  .marquee-track {
+    animation: none !important;
+  }
+  .obsidian-panel {
+    transition: none !important;
+  }
+}
